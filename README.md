@@ -34,9 +34,18 @@ and
 ```
 3. Download from this repository file ProductsTableSeeder.php and place it in ./database/seeders
 
-4. Create empty file database.sqlite in ./database
+4. In ./database/seeders/DatabaseSeeder.php edit:
+```
+public function run()
+{
+    ...
+    $this->call(ProductsTableSeeder::class);
+    ...
+}
+```
+5. Create empty file database.sqlite in ./database
 
-5. In ./.env set:
+6. In ./.env set:
 ```
 DB_CONNECTION=sqlite
 ```
@@ -46,7 +55,7 @@ DB_database=laravel
 ```
 ### Installation
 
-6. In main project directory: (can be in the different order -> I've checked yet)
+7. In main project directory: (can be in the different order -> I've checked yet)
 ```
 $ composer require recruitment/products
 $ php artisan migrate
