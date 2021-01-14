@@ -5,6 +5,9 @@
         {
             "name": "Agnieszka Kurzajewska",
             "email": "agnieszkakurzajewska@hotmail.com"
+        },
+        {
+            "license": "MIT"
         }
     ],
     "minimum-stability": "dev",
