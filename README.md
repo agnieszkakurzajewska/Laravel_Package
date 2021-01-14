@@ -1,5 +1,38 @@
 # Laravel Package
 
+### Installation and configuration
+
+1. In composer.json add:
+```
+"autoload": {
+    "psr-4": {
+        ...
+        "Recruitment\\Products\\": "vendor/recruitment/products/src"
+        ...
+    }
+}
+```
+and
+```
+"extra": {
+    "laravel": {
+        "dont-discover": [
+            ...
+            "Recruitment\\Products\\ProductsServiceProvider"
+            ...
+        ]
+    }
+},
+```
+2. In config/app.php add:
+```
+'providers' => [
+    ...
+    Recruitment\Products\ProductsServiceProvider::class,
+    ...
+],
+```
+
 ### CURL usage examples
 
 ##### Show available products:
