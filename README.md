@@ -1,8 +1,8 @@
 # Laravel Package
 
-### Installation and configuration
+### Configuration
 
-1. In composer.json add:
+1. In ./composer.json add:
 ```
 "autoload": {
     "psr-4": {
@@ -24,7 +24,7 @@ and
     }
 },
 ```
-2. In config/app.php add:
+2. In ./config/app.php add:
 ```
 'providers' => [
     ...
@@ -32,7 +32,27 @@ and
     ...
 ],
 ```
+3. Download from this repository file ProductsTableSeeder.php and place it in ./database/seeders
 
+4. Create empty file database.sqlite in ./database
+
+5. In ./.env set:
+```
+DB_CONNECTION=sqlite
+```
+and delete line:
+```
+DB_database=laravel
+```
+### Installation
+
+6. In main project directory: (can be in the different order -> I've checked yet)
+```
+$ composer require recruitment/products
+$ php artisan migrate
+$ php artisan db:seed   //command to fill database with initial records
+$ composer update
+```
 ### CURL usage examples
 
 ##### Show available products:
