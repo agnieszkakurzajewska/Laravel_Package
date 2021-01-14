@@ -1,0 +1,24 @@
+{
+    "name": "recruitment/products",
+    "description": "A Laravel package that (using REST API) enables performing CRUD functions on its database.",
+    "authors": [
+        {
+            "name": "Agnieszka Kurzajewska",
+            "email": "agnieszkakurzajewska@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "recruitment\\products\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Recruitment\\Products\\ProductsServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {}
+}
