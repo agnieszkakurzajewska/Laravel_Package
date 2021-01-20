@@ -1,5 +1,7 @@
 # Laravel Package
 
+## A Laravel package that (using REST API) enables performing CRUD functions on its database.
+
 ### Configuration
 
 1. In ./composer.json add:
@@ -55,7 +57,7 @@ DB_database=laravel
 ```
 ### Installation
 
-7. In main project directory: (can be in the different order -> I've checked yet)
+7. In main project directory:
 ```
 $ composer require recruitment/products
 $ php artisan migrate
