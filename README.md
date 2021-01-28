@@ -14,18 +14,6 @@
     }
 }
 ```
-and
-```
-"extra": {
-    "laravel": {
-        "dont-discover": [
-            ...
-            "Recruitment\\Products\\ProductsServiceProvider"
-            ...
-        ]
-    }
-},
-```
 2. In ./config/app.php add:
 ```
 'providers' => [
